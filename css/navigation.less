@@ -94,10 +94,10 @@
 .container >.navbar-header {
     margin-left: 20%;
 }
-div>ul>li:hover {
+.Nav_menu:hover {
     transform: translateY(20px);
 }
-div>ul>li:after {
+.Nav_menu:after {
     transition: all 0.3s;
 }
 .container >.navbar-header>:after {
@@ -107,6 +107,20 @@ div>ul>li:after {
     box-shadow: 0px -10px 50px antiquewhite;
     z-index: 99;
 }
-.Nav_menu{
+.Nav_menu {
     background-color: #222;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+    margin-left: 25%;
+}
+
+.teamPhoto{
+ background-image: url(img/normal.jpg);
+ background-repeat:  no-repeat;
+ background-size: cover;
+}
+.teamPhoto:hover{
+  -webkit-filter: grayscale(100%);
+  
 }
