@@ -114,13 +114,18 @@
     border-color: #101010;
     margin-left: 25%;
 }
-
+ .content{
+    width: auto;
+    height: 900px;
+ }
 .teamPhoto{
  background-image: url(img/normal.jpg);
  background-repeat:  no-repeat;
- background-size: cover;
+ background-size: contain;
+ -webkit-filter: grayscale(100%);
 }
 .teamPhoto:hover{
-  -webkit-filter: grayscale(100%);
+     transition: all 1.5s;
+  -webkit-filter: grayscale(0%);
   
 }
