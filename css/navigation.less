@@ -98,16 +98,15 @@
     transform: translateY(20px);
 }
 .Nav_menu:after {
-    transition: all 0.3s;
-}
-.container >.navbar-header>:after {
-    transition: all 0.3s;
+    // transition: all 0.3s;
 }
 .nav {
     box-shadow: 0px -10px 50px antiquewhite;
     z-index: 99;
 }
 .Nav_menu {
+    width: 10%;
+    transition: all 0.3s;   
     background-color: #222;
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -128,4 +127,11 @@
      transition: all 0.5s;
   -webkit-filter: grayscale(0%);
   
+}
+
+.menuWidth{
+    width: 150%;
+}
+.navbar-nav > .active > a{
+    box-shadow: #ecf0f1;
 }
