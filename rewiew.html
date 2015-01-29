@@ -9,7 +9,7 @@
     <title>pPersectology</title>
 
 
-
+    <script src="//vk.com/js/api/openapi.js" type="text/javascript" charset="windows-1251"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <!-- Bootstrap -->
@@ -64,7 +64,16 @@
     </nav>
     <!-- /navbar -->
     <!-- rewiew -->
-    
+    <script type="text/javascript">
+      VK.init({
+        apiId: http://kaflan.github.io/zub-project/rewiew.html,
+        onlyWidgets: true
+      });
+    </script>
+    <div id="vk_comments"></div>
+    <script type="text/javascript">
+     VK.Widgets.Comments('vk_comments', {width: 500, limit: 15});
+    </script>
     <!--  rewiew-->
    <div class="foot_color">
 
