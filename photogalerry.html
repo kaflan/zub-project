@@ -43,7 +43,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li ><a href="index.html">Home</a>
+                    <li><a href="index.html">Home</a>
                     </li>
                     <li class="active"><a href="photogalerry.html">Photogalerry</a>
                     </li>
@@ -64,9 +64,81 @@
     </nav>
     <!-- /navbar -->
     <!-- rewiew -->
-    
+    <section>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="album_upload_area">
+        <!-- create album -->
+        <aside class="upload_album">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Cоздать альбом
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> Закрыть &times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Создать альбом</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="exampleInputName2">Название</label>
+                                <input type="text" class="form-control" id="exampleInputName2" placeholder="Название">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputName2">Описание</label>
+                                <input type="text" class="form-control" id="exampleInputName3" placeholder="Описание">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- /create album -->
+
+        <aside class="sumary_wrap"></aside>
+        <aside class="container photo_albums">
+
+        </aside>
+
+    </section>
     <!--  rewiew-->
-   <div class="foot_color">
+    <div class="foot_color">
 
         <!-- footer -->
         <footer class=" center pad-top">
@@ -85,12 +157,17 @@
 
                     <!-- pages links -->
                     <div class="col-sm-6">
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled row">
 
-                            <li><p> <i class="fa fa-at"></i> kaf_90@mail.ru</p></li>
-                            <li><p> <i class="fa fa-skype" style="margin-left: -8px;"></i> mr.ass_kaflan</p>
+                            <li>
+                                <p> <i class="fa fa-at"></i> kaf_90@mail.ru</p>
                             </li>
-                            <li><p><i class="fa fa-phone"></i> +30933234108</p></li>
+                            <li>
+                                <p> <i class="fa fa-skype" style="margin-left: -8px;"></i> mr.ass_kaflan</p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-phone"></i> +30933234108</p>
+                            </li>
                         </ul>
                     </div>
                     <!-- contacts -->
@@ -104,15 +181,18 @@
         <p class="center">&copy; kaflan and davert 2014</p>
     </div>
     <!-- vk -->
-    
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- any script -->
-        <script src="js/jquery-2.1.1.js"></script>
-        <script src="js/masonry.pkgd.min.js"></script>
-        <script src="js/jquery.flexslider-min.js"></script>
-        <script src="js/main.js"></script>
-        <!-- Resource jQuery -->
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- any script -->
+    <!-- plagin -->
+    <script src="js/jquery.filedrop.js"></script>
+    <!-- sript -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Resource jQuery -->
+</body>
